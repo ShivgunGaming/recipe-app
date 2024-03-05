@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recipe App</h1>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+        <i class="fas fa-search"></i> <!-- Add search icon -->
+      </div>
+    </header>
+    <div class="sidebar">
+      <label for="daySelect">Select Day:</label>
+      <div class="custom-select"> <!-- Custom select dropdown -->
+        <select id="daySelect">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+      </div>
+      <button id="addRecipeBtn">Add Dish</button>
+    </div>
+    <div id="recipeList" class="recipe-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
